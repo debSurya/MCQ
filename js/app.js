@@ -1,0 +1,1 @@
+var mcqModule = angular.module("MCQ", ['ngMaterial']);

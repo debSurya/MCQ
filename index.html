@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <script src="bower_components/angular/angular.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <link href="bower_components/angular-material/angular-material.css" rel="stylesheet">
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/directives/testDirective.js"></script>
+    <script src="js/controllers/mainController.js"></script>
+    <script src="js/controllers/resultController.js"></script>
+    <script src="js/services/viewChangingService.js"></script>
+    <script src="js/services/retrieveDataService.js"></script>
+    <script src="js/services/progressStorageService.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body ng-app="MCQ">
+    <div class="container-fluid">
+        <div ng-show="!isDisabled.controllerVisibility" ng-controller="mainController">
+            <div ng-show="!isDisabled.directiveVisibility">
+                <br><br>
+                <label class="title rotate"><p>amDog.com</p></label>
+                <br><br>
+                <div class="mcqTabs" ng-click="isDisabled.directiveVisibility = !isDisabled.directiveVisibility; index=0; loadQuestion()"><label class="testType">CURRENT AFFAIRS</label></div>
+                <br>
+                <div class="mcqTabs" ng-click="isDisabled.directiveVisibility = !isDisabled.directiveVisibility; index=1; loadQuestion()"><label class="testType">TECHNOLOGY</label></div>
+                <br>
+                <div class="mcqTabs" ng-click="isDisabled.directiveVisibility = !isDisabled.directiveVisibility; index=2; loadQuestion()"><label class="testType">SPORTS</label></div>
+            </div>
+                <test-directive ng-show="isDisabled.directiveVisibility"></test-directive>
+            </div>
+            <div class="resultContainer" ng-show="isDisabled.controllerVisibility" ng-controller="resultController">
+                <div>
+                    <h1 class="progressHeading"><u>PROGRESS REPORT</u></h1>
+                    <br>
+                    <md-content class="md-padding" layout-xs="column" layout="row">
+                        <div flex-xs flex-gt-xs="80" layout="column">
+                            <md-card>
+                                <md-card-title>
+                                    <mr-card-title-text>
+                                        <span class="md-headline">TEST TITLE : {{resultData.testTitle}}</span>
+                                    </mr-card-title-text>
+                                </md-card-title>
+                            </md-card>
+                            <br>
+                            <md-card>
+                                <md-card-title>
+                                    <mr-card-title-text>
+                                        <span class="md-headline">MARKS OBTAINED OUT OF 100 :  {{resultData.obtainedMarks}}</span>
+                                    </mr-card-title-text>
+                                </md-card-title>
+                            </md-card>
+                            <br>
+                            <md-card>
+                                <md-card-title>
+                                    <mr-card-title-text>
+                                        <span class="md-headline">NO. OF QUESTIONS ANSWERED IN 1ST ATTEMPT : {{resultData.answerIn1st}}</span>
+                                    </mr-card-title-text>
+                                </md-card-title>
+                            </md-card>
+                            <br>
+                            <md-card>
+                                <md-card-title>
+                                    <mr-card-title-text>
+                                        <span class="md-headline">NO. OF QUESTIONS ANSWERED IN 2ND ATTEMPT : {{resultData.answerIn2nd}}</span>
+                                    </mr-card-title-text>
+                                </md-card-title>
+                            </md-card>
+                        </div>
+                    </md-content>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

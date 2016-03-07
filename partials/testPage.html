@@ -1,0 +1,17 @@
+<br>
+<div>
+    <div class="questionTab">
+        <label class="question">{{questionValue}}</label>
+    </div>
+    <br>
+    <div class="answerTab">
+        <md-radio-group ng-model="answer" ng-change="submitDisabledStatus=false">
+            <md-radio-button value="{{ans1Value}}">&nbsp;{{ans1Value}}</md-radio-button>
+            <md-radio-button value="{{ans2Value}}">&nbsp;{{ans2Value}}</md-radio-button>
+            <md-radio-button value="{{ans3Value}}">&nbsp;{{ans3Value}}</md-radio-button>
+            <md-radio-button value="{{ans4Value}}">&nbsp;{{ans4Value}}</md-radio-button>
+        </md-radio-group>
+        <br>
+        <md-button class="md-raised md-primary" ng-disabled="submitDisabledStatus" ng-click="loadQuestion()">SUBMIT</md-button>
+    </div>
+</div>

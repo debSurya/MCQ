@@ -1,0 +1,107 @@
+[
+    {
+        "title" : "Current Affairs",
+        "ques1": {
+            "ques": "Who is the education minister of India?",
+            "ans1": "Smriti Irani",
+            "ans2": "Mamata Banerjee",
+            "ans3": "Mother Teresa",
+            "ans4": "Rani Laxmibai",
+            "correct": "Smriti Irani"
+        },
+        "ques2": {
+            "ques": "FIFA has elected which of the following as its new President?",
+            "ans1": "Ratan Tata",
+            "ans2": "Sonu Nigam",
+            "ans3": "Gianni Infantino",
+            "ans4": "Steve Jobs",
+            "correct" : "Gianni Infantino"
+        },
+        "ques3": {
+            "ques": "Which of the following bank partners with Suvidhaa to offer loans to urban poor?",
+            "ans1": "Yes Bank",
+            "ans2": "Axis Bank",
+            "ans3": "Allahabad Bank",
+            "ans4": "HDFC Bank",
+            "correct" : "Axis Bank"
+        },
+        "ques4": {
+            "ques": "Which of the following Indian Naval Ship will be developed as a tourism centre?",
+            "ans1": "INS Vikrant",
+            "ans2": "INS Vishal",
+            "ans3": "INS Arihant",
+            "ans4": "INS Viraat",
+            "correct" : "INS Viraat"
+        }
+	},
+    {
+        "title" : "Technology",
+        "ques1": {
+            "ques": "What is the name of first computer virus?",
+            "ans1": "Rabbit",
+            "ans2": "Creeper Virus",
+            "ans3": "SCA Virus",
+            "ans4": "Trojan worm",
+            "correct": "Creeper Virus"
+        },
+        "ques2": {
+            "ques": "What do we call a network whose elements may be separated by some distance? It usually involves two or more small networks and dedicated high-speed telephone lines.",
+            "ans1": "URL (Universal Resource Locator)",
+            "ans2": "LAN (Local Area Network)",
+            "ans3": "World Wide Web",
+            "ans4": "WAN (Wide Area Network)",
+            "correct": "WAN (Wide Area Network)"
+        },
+        "ques3": {
+            "ques": "What was the active medium used in the first working laser ever constructed?",
+            "ans1": "A diamond block",
+            "ans2": "Helium-neon gas",
+            "ans3": "Carbon dioxide gas",
+            "ans4": "A ruby rod",
+            "correct": "Carbon dioxide gas"
+        },
+        "ques4": {
+            "ques": "Which was an early mainframe computer?",
+            "ans1": "ENIAC",
+            "ans2": "UNIC",
+            "ans3": "BRAINIA",
+            "ans4": "FUNTRIA",
+            "correct": "ENIAC"
+        }
+	},
+    {
+        "title" : "Sports",
+        "ques1": {
+            "ques": "Which was the 1st non Test playing country to beat India in an international match?",
+            "ans1": "Sri Lanka",
+            "ans2": "Canada",
+            "ans3": "Zimbabwe",
+            "ans4": "East Africa",
+            "correct": "Sri Lanka"
+        },
+        "ques2": {
+            "ques": "Who is the first Indian woman to win an Asian Games gold in 400m run?",
+            "ans1": "M.L.Valsamma",
+            "ans2": "P.T.Usha",
+            "ans3": "Kamaljit Sandhu",
+            "ans4": "K.Malleshwari",
+            "correct": "Kamaljit Sandhu"
+        },
+        "ques3": {
+            "ques": "Who has scored the most Test hundreds ever?",
+            "ans1": "Steve Waugh",
+            "ans2": "Sachin Tendulkar",
+            "ans3": "Shane Warne",
+            "ans4": "Sunil Gavaskar",
+            "correct": "Sachin Tendulkar"
+        },
+        "ques4": {
+            "ques": "Who was the 1st ODI captain for India?",
+            "ans1": "Ajit Wadekar",
+            "ans2": "Bishen Singh Bedi",
+            "ans3": "Nawab Pataudi",
+            "ans4": "Vinoo Mankad",
+            "correct": "Ajit Wadekar"
+        }
+	}
+]
